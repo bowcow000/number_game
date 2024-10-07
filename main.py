@@ -1,7 +1,7 @@
 import random
 
 attempt = 3
-gog = 0
+wins = 0
 
 while attempt > 0:
     randoms = random.randint(1, 10)
@@ -10,11 +10,11 @@ while attempt > 0:
     if asd == randoms:
         print(f"Вы угадали число {randoms}")
         print("="*30,"|")
-        gog += 1
+        wins += 1
     else:
         print(f"Вы не угадали число {randoms}")
         print("="*30,"|")
-    if gog == 3:
+    if wins == 3:
         print("Вы угадали все числа!!!")
     elif attempt == 0:
         print("Ваши попытки исчерпаны")
